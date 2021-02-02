@@ -4,7 +4,7 @@ Python3 port of the original Adafruit [Python-Thermal-Printer](https://github.co
 
 ## Getting Started
 
-Install Raspbian Buster and Wire the printer according to [this](https://learn.adafruit.com/networked-thermal-printer-using-cups-and-raspberry-pi/connect-and-configure-printer). I powered the printer with the GPIO pins as well.
+Install Raspbian Buster (DEBIAN 10) and wire the printer according to [this](https://learn.adafruit.com/networked-thermal-printer-using-cups-and-raspberry-pi/connect-and-configure-printer). I powered the printer with the GPIO pins as well.
 
 Run a test to see if the printer is working by punching in these commands into the terminal.
 
