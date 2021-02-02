@@ -9,7 +9,7 @@ Install Raspbian Buster and Wire the printer according to [this](https://learn.a
 Run a test to see if the printer is working by punching in these commands into the terminal.
 
 ```
-stty -F /dev/serial0 19200
+stty -F /dev/serial0 9600
 echo -e "This is a test.\\n\\n\\n" > /dev/serial0
 ```
 
@@ -32,16 +32,17 @@ sudo ./install
 ```
 
 Make the printer the default printer. This is useful if you are going to be doing other things with it.
+My printer is connected to Raspo-Zero UART with 9600 Baud
 
 ```
-sudo lpadmin -p ZJ-58 -E -v serial:/dev/serial0?baud=19200 -m zjiang/ZJ-58.ppd
+sudo lpadmin -p ZJ-58 -E -v serial:/dev/serial0?baud=9600 -m zjiang/ZJ-58.ppd
 sudo lpoptions -d ZJ-58
 ```
 
 Restart the system. Clone this repository and try to run *printertest.py*.
 
 ```
-git clone https://github.com/galacticfan/Python-Thermal-Printer/
+git clone https://github.com/FrankUlbrich/Python-Thermal-Printer
 cd Python-Thermal-Printer
 python3 printertest.py
 ```
