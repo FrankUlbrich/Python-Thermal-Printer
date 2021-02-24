@@ -47,5 +47,4 @@ git clone https://github.com/FrankUlbrich/Python-Thermal-Printer
 cd Python-Thermal-Printer
 python3 printertest.py
 ```
-
-Let me know if you have any issues.
+.......... This code dies partly work with my printer .............
